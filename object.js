@@ -10,11 +10,11 @@ const obj1 = {};  // 'object literal' syntax
 const obj2 = Object();  // 'object constructor' syntax
 
 function print(person) {
-    console.log(person.name);
-    console.log(person.age);
+    console.log(`name:${person.name}`);
+    console.log(`age:${person.age}`);
 }
 
-const hyun = { name: 'hyunjung', age: 23 }
+const hyun = { name:'hyunjung', age:23 }
 print(hyun);
 
 // with JavaScript magic (dynamically typed language)
@@ -52,7 +52,7 @@ function Person(name, age) {
     // this = {};
     this.name = name;
     this.age = age;
-    // return this;
+    return this;
 }
 
 // 5. in operator: property existence check (key in obj)
@@ -63,7 +63,7 @@ console.log('random' in hyun);  // false
 // for (key in obj)
 console.clear();
 for (let key in hyun) {
-    console.log(key);
+    console.log(hyun.key);
 }
 
 // for (value of iterable)

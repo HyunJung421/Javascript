@@ -13,7 +13,7 @@ let globalName = 'global name';
     console.log(name);
     console.log(globalName);
 }
-console.log(name);
+//console.log(name);
 console.log(globalName);
 
 // var (don't ever use this!)
@@ -44,6 +44,7 @@ const maxNumber = 5;
 const count = 17;  // integer
 const size = 17.1  // decimal number
 console.log(`value: ${count}, type: ${typeof count}`);
+console.log("value: "+count+", type: "+typeof count);
 console.log(`value: ${size}, type: ${typeof size}`);
 
 // number - special numeric values: infinity, -infinity, NaN
